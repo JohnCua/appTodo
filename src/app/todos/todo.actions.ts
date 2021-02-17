@@ -2,6 +2,12 @@ import { createAction, props } from '@ngrx/store';
 
 
 export const crear = createAction(
-    '[TODO] crear todo',
+    '[TODO] Crear Todo',
     props<{ texto: string }>()  //argumento
+    );
+
+
+export const toggle = createAction(
+    '[TODO] Toggle Todo',
+    props<{ id: number }>()  //argumento
     );
